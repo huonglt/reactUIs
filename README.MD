@@ -1,4 +1,4 @@
-One afternoon, I surfed Linkedln site, and I got a message popup. Impressed, so here I build the components using ReactJS. Pure components, handcrafted, just using HTML5 & CSS. Borrowed some svg icons from Linkedln
+On Anzac day, I surfed Linkedln site, and I got a message popup. Impressed, so here I build the components using ReactJS. Pure components, handcrafted, just using HTML5 & CSS. Borrowed some svg icons from Linkedln
 
 - The initial floating message popup at the bottom right corner of the page
 
@@ -11,5 +11,9 @@ One afternoon, I surfed Linkedln site, and I got a message popup. Impressed, so 
 - The chat message popup is open
 
 ![Message popup maximized](screenshots/3.png "Message Popup Open")
+
+- The main floating message can be minimized, while the other popup is open
+
+![One popup minimized, one popup open](screenshots/4.png "One popup minimized, one popup open")
 
 The rest will come soon
