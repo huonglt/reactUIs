@@ -1,4 +1,4 @@
-One afternoon, I surfed Linkedln site, and I got a message popup. Impressed, so here I build the components using ReactJS. Pure components, handcrafted.
+One afternoon, I surfed Linkedln site, and I got a message popup. Impressed, so here I build the components using ReactJS. Pure components, handcrafted, just using HTML5 & CSS. Borrowed some svg icons from Linkedln
 
 - The initial floating message popup at the bottom right corner of the page
 
