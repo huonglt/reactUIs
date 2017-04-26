@@ -12,4 +12,4 @@ One afternoon, I surfed Linkedln site, and I got a message popup. Impressed, so 
 
 ![Message popup maximized](screenshots/3.png "Message Popup Open")
 
-### The rest will come soon
+The rest will come soon
