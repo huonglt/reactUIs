@@ -1,4 +1,4 @@
-### This is to build message popups components using ReactJS
+### One day, I surfed Linkedln site, and I got a message popup. Impressed, so here I build the components using ReactJS
 
 - The initial floating message popup at the bottom right corner of the page
 
