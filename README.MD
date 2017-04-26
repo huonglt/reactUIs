@@ -1,4 +1,4 @@
-### This is to build message popups in React
+### This is to build message popups components using ReactJS
 
 - The initial floating message popup at the bottom right corner of the page
 
@@ -11,3 +11,5 @@
 - The chat message popup is open
 
 ![Message popup maximized](screenshots/3.png "Message Popup Open")
+
+### The rest will come soon
