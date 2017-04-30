@@ -16,4 +16,7 @@ On Anzac day, I surfed Linkedln site, and I got a message popup. Impressed, so h
 
 ![One popup minimized, one popup open](screenshots/4.png "One popup minimized, one popup open")
 
-The rest will come soon
+### Getting Started
+1. Clone this repository
+2. Run `npm install && npm start`
+3. Visit `0.0.0.0:8080` in your browser

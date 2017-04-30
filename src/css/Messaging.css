@@ -1,0 +1,155 @@
+.flexBox {
+  display: flex;
+}
+.inline {
+  display: inline;
+}
+div.chattee {
+  line-height: 30px;
+  padding: 10px;
+}
+div.chattee:hover {
+  background-color: #f3f6f8;
+}
+
+div.container {
+  position: fixed;
+  right: 0;
+  bottom:0;
+
+  color: rgba(0, 0, 0, .7);
+  margin: 0 10px 0 10px;
+
+  width: 264px;
+  display: block;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, .25);
+  cursor: pointer;
+  border-radius: 2px 2px 0 0;
+  border: 1px solid rgba(0, 0, 0, .15);
+  z-index: 1000;
+  background:white;
+
+}
+
+div.innerContainer {
+  display: flex;
+  flex: 0 0 264px;
+  padding: 10px 10px 4px 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, .25);
+}
+
+.iconContainer {
+  margin-left: auto;
+  margin-top: 3px;
+}
+.standardLine {
+  line-height: 22px;
+}
+.recentContainer {
+  display: block;
+  height: 300px;
+}
+.recentBlock {
+  padding: 10px 10px 0px 10px;
+  font-size: 10pt;
+}
+.avatar {
+  box-sizing: border-box;
+  background-clip: content-box;
+  border: 3px solid transparent;
+  border-radius: 49.9%;
+  width: 34px;
+  height: 34px;
+}
+.contactContainer {
+  margin-left: 10px;
+  overflow: hidden;
+}
+.contactName {
+  line-height: 20px;
+  font-weight: bold;
+  font-size: 10pt;
+}
+.contactTitle {
+  line-height: 20px;
+  font-size: 10pt;
+}
+.chatContainer {
+  width: 334px;
+  position: fixed;
+  bottom: 0;
+  right: 264px;
+  border-radius: 2px 2px 0 0;
+  border: 1px solid rgba(0, 0, 0, .15);
+  background: white;
+  overflow: visible;
+  height: 344px;
+  margin: 0 25px 0 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, .25);
+}
+.chatInnerContainer {
+  line-height: 22px;
+  background: #44474a;
+  color: white;
+  padding: 10px;
+}
+.closeIconContainer {
+  position: absolute;
+  right: 10px;
+  display: inline;
+}
+.closeIcon {
+  color: #e3e3e3;
+  cursor: pointer;
+}
+.chatMessage {
+  background: #f3f6f8;
+  padding: 10px;
+  height: 100%;
+}
+.chatFooterContainer {
+  margin: 0 0 0 0;
+  background: white;
+  width: auto;
+  position: fixed;
+  bottom: 0px;
+  border-top: 2px solid #0084bf;
+}
+.chatTextArea {
+  line-height: 18px;
+  width: 314px;
+  min-height: 40px;
+  max-height: 120px;
+  outline: none;
+  font-size: 11pt;
+  line-height: 1rem;
+  border: none;
+  margin-top: 8px;
+  padding: 0 10px 0 10px;
+  border-width: 0;
+  resize: none;
+  word-wrap: break-word;
+}
+.chatFooter {
+  margin: 5px 0 5px 10px;
+  background: white;
+}
+.footerIcon {
+  margin: 3px;
+  color: rgba(0, 0, 0, .7);
+}
+.sendContainer {
+  position: absolute;
+  background: white;
+  right: 10px;
+  display: inline;
+}
+.sendLabel {
+  margin-right: 10px;
+  color: rgba(0, 0, 0, .7);
+  font-size: 10pt;
+}
+svg.icon:hover {
+
+  fill: gba(0, 0, 0, 0.701961);
+}
