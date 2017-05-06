@@ -15,9 +15,7 @@ export default class RecentChattee extends React.Component {
         <div className={theme.recentBlock}>Recent</div>
         <div className={theme.chattee} onClick={toggleChat}>
           <div className={theme.flexBox}>
-            <div>
-              <img alt="Thomas Wong" className={theme.avatar} src="https://media.licdn.com/mpr/mpr/shrinknp_100_100/p/7/005/095/2f7/380f7c7.jpg"/>
-            </div>
+            <img alt="Thomas Wong" className={theme.avatar} src="https://media.licdn.com/mpr/mpr/shrinknp_100_100/p/7/005/095/2f7/380f7c7.jpg"/>
             <div className={theme.contactContainer}>
               <div className={theme.contactName}>Thomas Wong</div>
               <div className={theme.contactTitle}>Managing Director of MRS</div>
