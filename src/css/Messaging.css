@@ -1,50 +1,72 @@
-.flexBox {
-  display: flex;
-}
-.inline {
-  display: inline;
-}
-div.chattee {
-  line-height: 30px;
-  padding: 10px;
-}
-div.chattee:hover {
-  background-color: #f3f6f8;
-}
-
-div.container {
+.baseContainer {
+  height: 380px;
+  width: 264px;
   position: fixed;
   right: 0;
   bottom:0;
 
-  color: rgba(0, 0, 0, .7);
-  margin: 0 10px 0 10px;
-
-  width: 264px;
-  display: block;
   box-shadow: 0 4px 8px rgba(0, 0, 0, .25);
-  cursor: pointer;
+
   border-radius: 2px 2px 0 0;
   border: 1px solid rgba(0, 0, 0, .15);
   z-index: 1000;
   background:white;
-
-}
-
-div.innerContainer {
+  margin-right: 16px;
+  margin-left: 16px;
+  font-family: Source Sans Pro, Helvetica, Arial, sans-serif, Hiragino Kaku Gothic Pro, Meiryo, Hiragino Sans GB W3, Noto Naskh Arabic, Droid Arabic Naskh, Geeza Pro, Simplified Arabic, Noto Sans Thai, Thonburi, Dokchampa, Droid Sans Thai, Droid Sans Fallback, -apple-system, '.SFNSDisplay-Regular', Heiti SC, Microsoft Yahei, Segoe UI;
+  font-weight: 400;
+  color: rgba(0, 0, 0, .7);
   display: flex;
+  flex-direction: column;
   flex: 0 0 264px;
-  padding: 10px 10px 4px 10px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, .25);
+
+}
+.container {
+
+  transform: translateY(344px);
+  -webkit-transform: translateY(344px);
+  transition-duration: 167ms;
+  transition-timing-function: cubic-bezier(0, 0, .2, 1);
+  transition-delay: 0s;
+  animation: fade-in 167ms cubic-bezier(.4, 0, 1, 1);
+
+
 }
 
+.innerContainer {
+  height: 36px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, .25);
+  cursor: pointer;
+  padding: 4px 4px 4px 12px;
+  display: flex;
+
+}
+
+.mainContent {
+  padding: 4px;
+  display: block;
+}
+.containerUp {
+  -webkit-transform: translateY(0);
+  transform: translateY(0);
+  transition-duration: 167ms;
+  transition-timing-function: cubic-bezier(0, 0, .2, 1);
+  transition-delay: 0s;
+  animation: fade-in 167ms cubic-bezier(.4, 0, 1, 1);
+}
+.heading {
+
+  margin-top: 5px;
+}
 .iconContainer {
   margin-left: auto;
-  margin-top: 3px;
+  margin-top: 5px;
 }
-.standardLine {
-  line-height: 22px;
+
+.hidden {
+  display: none;
 }
+
 .recentContainer {
   display: block;
   height: 300px;
@@ -60,10 +82,12 @@ div.innerContainer {
   border-radius: 49.9%;
   width: 34px;
   height: 34px;
+
 }
 .contactContainer {
   margin-left: 10px;
   overflow: hidden;
+  display: inline-block;
 }
 .contactName {
   line-height: 20px;
@@ -74,7 +98,16 @@ div.innerContainer {
   line-height: 20px;
   font-size: 10pt;
 }
+div.chattee {
+  line-height: 30px;
+  padding: 10px;
+  cursor: pointer;
+}
+div.chattee:hover {
+  background-color: #f3f6f8;
+}
 .chatContainer {
+  height: 380px;
   width: 334px;
   position: fixed;
   bottom: 0;
@@ -83,7 +116,6 @@ div.innerContainer {
   border: 1px solid rgba(0, 0, 0, .15);
   background: white;
   overflow: visible;
-  height: 344px;
   margin: 0 25px 0 10px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, .25);
 }
@@ -92,6 +124,8 @@ div.innerContainer {
   background: #44474a;
   color: white;
   padding: 10px;
+  display: flex;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, .25);
 }
 .closeIconContainer {
   position: absolute;
