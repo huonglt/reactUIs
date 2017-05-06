@@ -13,14 +13,14 @@ export default class ChatPopup extends React.Component {
     if(!this.props.show) {
       return null;
     }
-    let { theme, toggleChat } = this.props;
+    let { theme, closeChat } = this.props;
     return (
       <div >
         <div className={theme.chatContainer}>
           <div className={theme.chatInnerContainer}>
             <div className={theme.inline}>Thomas Wong</div>
             <div className={theme.closeIconContainer}>
-              <FaClose size={18} className={theme.closeIcon} onClick={toggleChat}/>
+              <FaClose size={18} className={theme.closeIcon} onClick={closeChat}/>
             </div>
           </div>
           <div  className={theme.chatMessage}></div>
