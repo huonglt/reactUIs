@@ -1,32 +1,40 @@
 import React from 'react';
-import { EditIcon, SettingsIcon, MinimizeIcon } from './Icons.js';
+import theme from '../css/Messaging.css';
+import cn from 'classnames';
+import RecentChattee from './RecentChattee.js';
 import ChatPopup from './ChatPopup.js';
 import Messaging from './Messaging.js';
-import RecentChattee from './RecentChattee.js';
-import theme from '../css/Messaging.css';
 
-export default  class MessagePopup extends React.Component {
+export default class Message1 extends React.Component {
   constructor(props) {
     super(props);
-    this.state = { showRecent: false, showChat: false };
-    this.toggleRecent = this.toggleRecent.bind(this);
+    this.state = { minimized: true, showChat: false };
+    this.handleClick = this.handleClick.bind(this);
     this.toggleChat = this.toggleChat.bind(this);
+    this.closeChat = this.closeChat.bind(this);
   }
-  toggleRecent() {
-    this.setState({...this.state, showRecent: !this.state.showRecent});
+  handleClick() {
+    this.setState({ minimized: !this.state.minimized });
   }
   toggleChat() {
-    this.setState({...this.state, showChat: !this.state.showChat});
+    if(!this.state.showChat) {
+      this.setState({ showChat: true });
+    }
+  }
+  closeChat() {
+    this.setState({ showChat: false });
   }
   render() {
+    let container = cn(theme.baseContainer, this.state.minimized ? theme.container : theme.containerUp);
+
     return (
       <div>
-        <div className={theme.container}>
-            <Messaging toggleRecent={this.toggleRecent} theme={theme}/>
-            <RecentChattee theme={theme} show={this.state.showRecent} toggleChat={this.toggleChat}/>
+        <div className={container}>
+          <Messaging theme={theme} handleClick={this.handleClick}/>
+          <RecentChattee theme={theme} show={!this.state.minimized} toggleChat={this.toggleChat}/>
         </div>
-        <ChatPopup show={this.state.showChat} toggleChat={this.toggleChat} theme={theme}/>
-      </div>
+        <ChatPopup show={this.state.showChat} closeChat={this.closeChat} theme={theme}/>
+      </div>  
     );
   }
 }
