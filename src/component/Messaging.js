@@ -6,10 +6,10 @@ export default class Messaging extends React.Component {
     super(props);
   }
   render() {
-    let { theme, toggleRecent }  = this.props;
+    let { theme, handleClick }  = this.props;
     return (
-      <div className={theme.innerContainer}>
-        <div className={theme.standardLine} onClick={toggleRecent}>Messaging</div>
+      <div className={theme.innerContainer} onClick={handleClick}>
+        <div className={theme.heading}>Messaging</div>
         <div  className={theme.iconContainer}>
           <EditIcon/>
           <SettingsIcon/>
