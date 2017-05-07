@@ -1,4 +1,4 @@
-On Anzac day, I surfed Linkedln site, and I got a message popup. Impressed, so here I build the components using ReactJS. Pure components, handcrafted, just using HTML5 & CSS. Borrowed some svg icons from Linkedln
+On Anzac day, I surfed Linkedln site, and I got a message popup. Impressed, so here I build the components using ReactJS. Pure components, handcrafted, just using HTML5 & CSS. Nice animation transition of the Messaging Popup window when it is minimized and opened, like what you see on Linkedln. Borrowed some svg icons from Linkedln
 
 - The initial floating message popup at the bottom right corner of the page
 
@@ -20,3 +20,6 @@ On Anzac day, I surfed Linkedln site, and I got a message popup. Impressed, so h
 1. Clone this repository
 2. Run `npm install && npm start`
 3. Visit `0.0.0.0:8080` in your browser
+
+### New things I learnt
+1. PostCss - nice way to use css module as a javascript object from React component
