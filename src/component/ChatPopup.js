@@ -18,8 +18,8 @@ export default class ChatPopup extends React.Component {
       <div >
         <div className={theme.chatContainer}>
           <div className={theme.chatInnerContainer}>
-            <div className={theme.inline}>Thomas Wong</div>
-            <div className={theme.closeIconContainer}>
+            <div>Thomas Wong</div>
+            <div>
               <FaClose size={18} className={theme.closeIcon} onClick={closeChat}/>
             </div>
           </div>
