@@ -23,3 +23,4 @@ On Anzac day, I surfed Linkedln site, and I got a message popup. Impressed, so h
 
 ### New things I learnt
 1. PostCss - nice way to use css module as a javascript object from React component
+2. Understand more about Flexbox model. Trying to use it more efficiently to layout web components
