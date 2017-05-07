@@ -25,7 +25,7 @@ export default class Message1 extends React.Component {
     this.setState({ showChat: false });
   }
   render() {
-    let container = cn(theme.baseContainer, this.state.minimized ? theme.container : theme.containerUp);
+    let container = cn(theme.baseContainer, this.state.minimized ? theme.containerMinimized : theme.containerPopUp);
 
     return (
       <div>
@@ -34,7 +34,7 @@ export default class Message1 extends React.Component {
           <RecentChattee theme={theme} show={!this.state.minimized} toggleChat={this.toggleChat}/>
         </div>
         <ChatPopup show={this.state.showChat} closeChat={this.closeChat} theme={theme}/>
-      </div>  
+      </div>
     );
   }
 }
